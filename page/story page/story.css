@@ -1,5 +1,5 @@
 .container{
-  background-color: #b2ceef;
+  background-color: #cec6c6;
   width: 100%;
   height: 1000px;
 }
@@ -9,7 +9,7 @@
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid  #EA18EE;
+    border: 1px solid  #f6e1f6;
     height: 250px;
     margin-top: 100px;
   }
