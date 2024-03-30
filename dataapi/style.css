@@ -1,5 +1,5 @@
 *{
-    margin: auto;
+    margin: 0;
     padding: 0;
     color: #EA18EE;
     background-color: #FFFFEC;
@@ -9,8 +9,9 @@
   overflow: hidden;
 }
 .card-container{
-  width: 80%;
+  width: 75%;
   overflow: hidden;
+  margin: auto;
  
 }
 .box {
@@ -43,10 +44,10 @@
   width: 100%;
   display: flex;
   justify-content:space-between;
-  background-color: #EA18EE;
+
 }
 .box1 p{
-  width: 200px;
+font-size: 20px;
 }
 
 

@@ -1,8 +1,17 @@
 header{
-    width: 80%;
+    width: 78%;
     margin: auto;
+    border-bottom: 5px solid #EA18EE;
+   
+
+
+
+ 
 }
 .nav-item{
     padding: 10px;
-    font-size: 20px;
+    font-size: 20px ;
+
+  
 }
+
