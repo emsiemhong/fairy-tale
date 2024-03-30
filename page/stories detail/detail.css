@@ -1,0 +1,46 @@
+*{
+    margin: auto;
+     padding: 0;
+ }
+ .single{
+     width: 100%;
+     overflow: hidden;
+     background-color: #FFFFEC;
+ }
+ .box{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+ }
+ .box h1{
+     width: 50%;
+     font-size: 40px;
+     line-height: 50px;
+ }
+ .box p{
+     width: 70%;
+     font-size: 25px;
+     line-height: 50px;
+     color: #EA18EE;
+ }
+ .image{
+     margin-top:  30px;
+     width: 55%;
+     height: 600px;
+   
+ }
+ .image img{
+    width: 100%;
+    height: 100%;
+ }
+ .title{
+     width: 70%;
+     overflow: hidden;
+     
+ }
+ .title p{
+     font-size: 28px;
+     color: #EA18EE;
+     margin-top: 30px ;
+ }
