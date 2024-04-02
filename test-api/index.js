@@ -13,13 +13,13 @@ return response.json();
          card.innerHTML +=  `        
          <div class="card-container">   
          <div class="box-0"><img src="${data[i].image}"></div>
-         <div class="box-1">
-         <div class="box">${data[i].id} </div>
-         <div>${data[i].title} </div>   
-         <div>${data[i].author} </div> 
-         <div>${data[i].created_at} </div>   
-          <div>${data[i].age} </div>          
-            <div>${data[i].summary}</div>   
+         <div class="box-1">        
+         <div cla>${data[i].title} </div><br>         
+            <div class="summary">${data[i].summary}</div><br>
+            <div class="box-2" >
+            <div>${data[i].author}</div>   
+            <div class="created">${data[i].created_at}</div>  
+            </div><br>
             <audio controls>
             <source src="${data[i].audio}" type="audio/mpeg">
             Your browser does not support the audio element.
