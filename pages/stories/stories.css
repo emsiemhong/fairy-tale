@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+  }
+  body{
+    background-color: #009FC1;
+  }
+  .card-container{
+    background-color: #009FC1;
+    box-shadow: 0px 0px 25px;
+    width: 75%;
+    height: 350px;
+    font-size: 18px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 25px;
+
+  }
+  .article{
+    position: relative;
+    left: 5%;
+  }
+  .pic{
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 310px;
+    padding: 7px;
+    left: 3%;
+  }
+  .pic img{
+    width: 450px;
+    height: 330px;
+  }
+  .scripts{
+    position: relative;
+    top: 6%;
+  }
+  .audio{
+    position: relative;
+    top: 15% ;
+  }
+  .title{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .audio{
+    width: 90%;
+    position: relative;
+    top: 15%;
+  }
+  .container{
+    padding: auto;
+  }
+  .navbar-brand img{
+    width: 200px;
+    height: 150px;
+  }
+  .nav-link{
+    color: white;
+  }
+  .navbar-link{
+    position: relative;
+    left: 20%;
+    gap: 15%;
+  }
+  .navbar-brand{
+    position: relative;
+    right: 100%;
+    top: -20px;
+  }
+  .box-img{
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+  }
+  /* .summary{
+    width: 90%;
+  } */
+
+
+  section{
+    
+    padding: 20px;
+    position: relative;
+    left: 75%;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+
+
+
+
+

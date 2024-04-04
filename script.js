@@ -1,3 +1,35 @@
+// function fetchData() {   
+//     fetch(" https://fairy-tale-api-inky.vercel.app/api/fairytales")     
+//     .then((response) => {     
+//       if (!response.ok) {      
+//         throw new Error("Network response was not ok");        
+//       }   
+//       return response.json();      
+//     })     
+//     .then((data) => {         
+//       const card = document.getElementById('box1');    
+//       for(let i=0; i < 8; i++)   {            
+//         if(data[i].age === "7-12") {                
+//           card.innerHTML +=   `                 
+//           <div class="container">
+//           <div class="card-group mt-3">
+//             <div class="card border-0 border-end">
+//               <img src="${data[i].image}" class="card-img">
+//               <div class="card-body">
+//                 <h5 class="card-title">${data[i].title}</h5>
+//                 <p>${data[i].author}</p>
+//                 <p class="card-text">${data[i].summary}</p>
+//               </div>
+//             </div>
+//              `}              
+//           }
+//         })        
+//           .catch((error) => {         
+//             console.error("Fetch error:", error);
+//             return error;
+//       });
+//   }
+//       fetchData();
 const API_URL = "https://fairy-tale-h8ekmey95-siemhong.vercel.app/";
 
 // GET /api/fairytales
@@ -70,3 +102,4 @@ async function displayHomePageContent() {
 
 // Call displayHomePageContent function when the page loads
 window.onload = displayHomePageContent;
+   
