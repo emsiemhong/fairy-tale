@@ -28,9 +28,7 @@ function fetchData() {
            Your browser does not support the audio element.
          </audio>
            </div>  
-        </div> 
-              `;
-      }
+        </div>  `; }
     } else {
       for (let i = 0; i < data.length; i++) {
         if (data[i].age === age) {
