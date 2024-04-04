@@ -27,7 +27,7 @@ body{
     font-size: 20px;
     margin-top: 3%;
 }
-.box-0{
+.box-img{
     width: 20%;
     height: auto;
     overflow: hidden;
@@ -60,4 +60,11 @@ audio{
 .summary{
     width: 90%;
    
+}
+section{
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
