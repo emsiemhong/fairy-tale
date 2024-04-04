@@ -14,41 +14,43 @@ function fetchData() {
     if (age === "all") {
       for (let i = 0; i < data.length; i++) {
         card.innerHTML += `
-               
-                <div class="each-card">
-                <div class="images"><img src="${data[i].image}"></img></div>
-                <div class="txt">
-                <a href='../../page/detail-page/index.html?id=${data[i].id}'>${data[i].title}</a>
-                <p>${data[i].summary}</p>
-                <div class="txt2">
-                <p>author’s name: ${data[i].author}</p>
-                <p>Year : ${data[i].created_at}</p>
-                </div>
-                <audio controls>
-                        <source src="${data[i].audio}" type="audio/mp3">
-                      </audio>
-                </div>
-                </div>`;
+        <div class="card-container">   
+        <div class="box-0"><img src="${data[i].image}"></div>
+        <div class="box-1">        
+        <div>${data[i].title} </div><br>         
+           <div class="summary">${data[i].summary}</div><br>
+           <div class="box-2" >
+           <div>${data[i].author}</div>   
+           <div class="created">${data[i].created_at}</div>  
+           </div><br>
+           <audio controls>
+           <source src="${data[i].audio}" type="audio/mpeg">
+           Your browser does not support the audio element.
+         </audio>
+           </div>  
+        </div> 
+              `;
       }
     } else {
       for (let i = 0; i < data.length; i++) {
         if (data[i].age === age) {
           card.innerHTML += `
-             
-              <div class="each-card">
-              <div class="images"><img src="${data[i].image}"></img></div>
-              <div class="txt">
-              <a href='../../page/detail-page/index.html?id=${data[i].id}'>${data[i].title}</a>
-              <p>${data[i].summary}</p>
-              <div class="txt2">
-              <p>author’s name: ${data[i].author}</p>
-              <p>Year : ${data[i].created_at}</p>
-              </div>
-              <audio controls>
-                      <source src="${data[i].audio}" type="audio/mp3">
-                    </audio>
-              </div>
-              </div>`;
+          <div class="card-container">   
+          <div class="box-0"><img src="${data[i].image}"></div>
+          <div class="box-1">        
+          <div>${data[i].title} </div><br>         
+             <div class="summary">${data[i].summary}</div><br>
+             <div class="box-2" >
+             <div>${data[i].author}</div>   
+             <div class="created">${data[i].created_at}</div>  
+             </div><br>
+             <audio controls>
+             <source src="${data[i].audio}" type="audio/mpeg">
+             Your browser does not support the audio element.
+           </audio>
+             </div>  
+          </div> 
+             `;
         }
       }
     }

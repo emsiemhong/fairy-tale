@@ -10,6 +10,14 @@ body{
     align-items: center;
     margin: auto;
 }
+
+section{
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 .card-container{
     border: 1px solid black;
     width: 90%;
@@ -27,7 +35,7 @@ body{
     font-size: 20px;
     margin-top: 3%;
 }
-.box-img{
+.box-0{
     width: 20%;
     height: auto;
     overflow: hidden;
@@ -60,11 +68,4 @@ audio{
 .summary{
     width: 90%;
    
-}
-section{
-    background-color: aqua;
-}
-a{
-    text-decoration: none;
-    color: black;
 }

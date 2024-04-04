@@ -14,7 +14,7 @@ return response.json();
          <div class="card-container">   
          <div class="box-0"><img src="${data[i].image}"></div>
          <div class="box-1">        
-         <div cla>${data[i].title} </div><br>         
+         <div>${data[i].title} </div><br>         
             <div class="summary">${data[i].summary}</div><br>
             <div class="box-2" >
             <div>${data[i].author}</div>   
