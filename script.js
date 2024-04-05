@@ -1,105 +1,70 @@
-// function fetchData() {   
-//     fetch(" https://fairy-tale-api-inky.vercel.app/api/fairytales")     
-//     .then((response) => {     
-//       if (!response.ok) {      
-//         throw new Error("Network response was not ok");        
-//       }   
-//       return response.json();      
-//     })     
-//     .then((data) => {         
-//       const card = document.getElementById('box1');    
-//       for(let i=0; i < 8; i++)   {            
-//         if(data[i].age === "7-12") {                
-//           card.innerHTML +=   `                 
-//           <div class="container">
-//           <div class="card-group mt-3">
-//             <div class="card border-0 border-end">
-//               <img src="${data[i].image}" class="card-img">
-//               <div class="card-body">
-//                 <h5 class="card-title">${data[i].title}</h5>
-//                 <p>${data[i].author}</p>
-//                 <p class="card-text">${data[i].summary}</p>
-//               </div>
-//             </div>
-//              `}              
-//           }
-//         })        
-//           .catch((error) => {         
-//             console.error("Fetch error:", error);
-//             return error;
-//       });
-//   }
-//       fetchData();
-const API_URL = "https://fairy-tale-h8ekmey95-siemhong.vercel.app/";
-
-// GET /api/fairytales
-
-
-
-
-
-// Simulated function to fetch fairy tales from API
-function fetchFairyTales() {
-  return new Promise((resolve, reject) => {
-    // Simulate fetching data from API
-    setTimeout(() => {
-      const fairyTales = [
-        {
-          title: "Cinderella",
-          ageGroup: "Preschool",
-          audioUrl: "cinderella.mp3",
-        },
-        {
-          title: "Snow White",
-          ageGroup: "Elementary",
-          audioUrl: "snow_white.mp3",
-        },
-        // Add more fairy tales here
-      ];
-      resolve(fairyTales);
-    }, 1000); // Simulate delay of 1 second
-  });
-}
-
-// Function to display top fairy tale and age categories
-async function displayHomePageContent() {
-  try {
-    const fairyTales = await fetchFairyTales();
-
-    // Display top fairy tale
-    const topFairyTaleContainer = document.querySelector("#topFairyTale");
-    const topFairyTale = fairyTales[0]; // Assuming the first tale is the top one
-    topFairyTaleContainer.innerHTML = `
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">${topFairyTale.title}</h5>
-              <p class="card-text">Age Group: ${topFairyTale.ageGroup}</p>
-              <audio controls>
-                <source src="${topFairyTale.audioUrl}" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
+function fetchData() {   
+    fetch(" https://fairy-tale-api-inky.vercel.app/api/fairytales")     
+    .then((response) => {     
+      if (!response.ok) {      
+        throw new Error("Network response was not ok");        
+      }   
+      return response.json();      
+    })     
+    .then((data) => {         
+      const card = document.getElementById('box1');    
+      for(let i=0; i < 8; i++)   {            
+        if(data[i].age === "0-3") {                
+          card.innerHTML +=   `                
+          <div class="container">
+          <div class="card-group  mt-3 gap-2">
+            <div class="card border-0 border-end">
+              <img src="${data[i].image}" class="card-img-top"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">${data[i].title}</h5>
+                <p class="card-text">${data[i].summary}</p>
+              </div>
             </div>
-          </div>
-        `;
 
-    // Display age categories
-    const ageCategoriesContainer = document.querySelector("#ageCategories");
-    const ageGroups = Array.from(
-      new Set(fairyTales.map((tale) => tale.ageGroup))
-    ); // Get unique age groups
-    ageGroups.forEach((ageGroup) => {
-      const talesInAgeGroup = fairyTales.filter(
-        (tale) => tale.ageGroup === ageGroup
-      );
-      ageCategoriesContainer.innerHTML += `
-            <li class="list-group-item">${ageGroup}</li>
-          `;
-    });
-  } catch (error) {
-    console.error("Error fetching fairy tales:", error);
+             `}              
+          }
+
+          const card1 = document.getElementById('box2');    
+      for(let i=0; i < 8; i++)   {            
+        if(data[i].age === "4-6") {                
+          card1.innerHTML +=   `                
+          <div class="container">
+          <div class="card-group  mt-3 gap-2">
+            <div class="card border-0 border-end">
+              <img src="${data[i].image}" class="card-img-top"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">${data[i].title}</h5>
+                <p class="card-text">${data[i].summary}</p>
+              </div>
+            </div>
+
+             `}              
+          }
+          const card2 = document.getElementById('box3');    
+          for(let i=0; i < 8; i++)   {            
+            if(data[i].age === "7-12") {                
+              card2.innerHTML +=   `                
+              <div class="container">
+              <div class="card-group  mt-3 gap-2">
+                <div class="card border-0 border-end">
+                  <img src="${data[i].image}" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">${data[i].title}</h5>
+                    <p class="card-text">${data[i].summary}</p>
+                  </div>
+                </div>
+    
+                 `}              
+              }
+        })        
+          .catch((error) => {         
+            console.error("Fetch error:", error);
+            return error;
+      });
   }
-}
+      fetchData();
 
-// Call displayHomePageContent function when the page loads
-window.onload = displayHomePageContent;
    

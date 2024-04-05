@@ -1,6 +1,6 @@
 // const paramstring =window.location.search;
 // const searchparams = new URLSearchParams(paramstring);
-// const age = searchparams.get('age');
+// const age1 = searchparams.get('age1');
 
 // function fetchData() {   
 //     fetch(" https://fairy-tale-api-inky.vercel.app/api/fairytales")     
@@ -13,7 +13,7 @@
 //     .then((data) => {         
 //       const card = document.getElementById('box');    
 //       for(let i=0; i < data.length; i++)   {            
-//         if(age === "all") {                
+//         if(data[i].age) {                
 //           card.innerHTML +=   `                 
 //           <div class="card-container">
 //             <div class="pic"><img src="${data[i].image}"</div> 
@@ -28,29 +28,7 @@
 //           </audio>              
 //           </div> 
 //           </div> `}
-//           else {
-//             for(let i=0; i < data.length; i++)   {            
-//               if(age === "age") {                
-//                 card.innerHTML +=   `                 
-//                 <div class="card-container">
-//                   <div class="pic"><img src="${data[i].image}"</div> 
-//                    <div class="article"> 
-//                    <div class="title">                              
-//                    <a href='../../page/detail-page/index.html?id=${data[i].id}'>${data[i].title}</a>
-//                    <div>${data[i].author} </div>
-//                    </div>                                  
-//                    <div class="scripts">${data[i].summary}</div>                 
-//                    <audio controls class="audio">              
-//                    <source src="${data[i].audio}" type="audio/mpeg">                      
-//                 </audio>              
-//                 </div> 
-//                 </div> `}              
-//                 } 
-//           } 
-//         }             
-          
-          
-          
+//          }             
 //         })        
 //           .catch((error) => {         
 //             console.error("Fetch error:", error);
