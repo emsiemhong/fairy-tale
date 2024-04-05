@@ -13,13 +13,13 @@ function fetchData() {
         if(data[i].age ==="0-3"){
             if(count<=3){
                 container.innerHTML+=`
-                <div class="card-group gap-3 mt-3">
-                <div class="card border-0 border-end">
+                <div class="card1">
+                <div class="img">
                   <img src="${data[i].image}" class="card-img-top"
                     alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">${data[i].title}</h5>
-                    <p class="card-text">${data[i].summary}</p>
+                    <h5>${data[i].title}</h5>
+                    <p>${data[i].summary}</p>
                     <p>By: ${data[i].author}</p>
                   </div>
                 </div>
@@ -29,7 +29,7 @@ function fetchData() {
             count++;
         }
     }
-    
+  
             
             })   
        .catch((error) => {   
