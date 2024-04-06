@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    background-color: #009FC1;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.card-container{
+    border: 1px solid black;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    margin-top: 2%;
+}
+.box-1{
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 3%;
+    font-size: 20px;
+    margin-top: 3%;
+}
+.box-0{
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    padding: 13px;
+
+    
+    
+}
+.box-0 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+.box-2{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+audio{
+    /* margin-top: 4%; */
+    width: 90%;
+    
+}
+.created{
+    margin-right: 12%;
+}
+.summary{
+    width: 90%;
+   
+}
