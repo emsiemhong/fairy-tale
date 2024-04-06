@@ -8,16 +8,16 @@ function fetchData() {
     })     
     .then((data) => {         
       const card = document.getElementById('box1');    
-      for(let i=0; i < 8; i++)   {            
+      for(let i=0; i < data.length; i++)   {            
         if(data[i].age === "0-3") {                
           card.innerHTML +=   `                
           <div class="container">
           <div class="card-group  mt-3 gap-2">
             <div class="card border-0 border-end">
-              <img src="${data[i].image}" class="card-img-top"
-                alt="...">
+            <a href='./pages/detial/storyDetail.html?id=${data[i].id}'><img src="${data[i].image}" class="card-img-top"
+            alt="..."></a>
               <div class="card-body">
-                <h5 class="card-title">${data[i].title}</h5>
+              <h5 class="card-title">${data[i].title}</h5>
                 <p class="card-text">${data[i].summary}</p>
               </div>
             </div>
@@ -32,10 +32,10 @@ function fetchData() {
           <div class="container">
           <div class="card-group  mt-3 gap-2">
             <div class="card border-0 border-end">
-              <img src="${data[i].image}" class="card-img-top"
-                alt="...">
+            <a href='./pages/detial/storyDetail.html?id=${data[i].id}'><img src="${data[i].image}" class="card-img-top"
+            alt="..."></a>
               <div class="card-body">
-                <h5 class="card-title">${data[i].title}</h5>
+              <h5 class="card-title">${data[i].title}</h5>
                 <p class="card-text">${data[i].summary}</p>
               </div>
             </div>
@@ -49,10 +49,10 @@ function fetchData() {
               <div class="container">
               <div class="card-group  mt-3 gap-2">
                 <div class="card border-0 border-end">
-                  <img src="${data[i].image}" class="card-img-top"
-                    alt="...">
+                <a href='./pages/detial/storyDetail.html?id=${data[i].id}'><img src="${data[i].image}" class="card-img-top"
+                alt="..."></a>
                   <div class="card-body">
-                    <h5 class="card-title">${data[i].title}</h5>
+                  <h5 class="card-title">${data[i].title}</h5>
                     <p class="card-text">${data[i].summary}</p>
                   </div>
                 </div>

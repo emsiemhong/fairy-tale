@@ -57,7 +57,6 @@ body {
   height: 50px;
   position: relative;
   left: 25px;
-  box-shadow: 0px 0px 25px;
 }
 #box1{
   display: flex;
@@ -70,15 +69,15 @@ body {
 #box3{
   display: flex;
   position: relative;
-  top: 1300px;
+  top: 5px;
 }
 .mt-5{
   position: relative;
   top: 700px;
 }
-.bbtn{
+.bbtn1{
   position: relative;
-  top: 650px;
+  top: 690px;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -90,6 +89,15 @@ body {
 .card-body{
   width: 500px;
   height: 350px;
+}
+.title {
+  margin-top: 78%;
+  text-align: center;
+  font-size: 2rem;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 
 
