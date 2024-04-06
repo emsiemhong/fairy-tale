@@ -55,6 +55,12 @@ button{
     border-radius: 15px;
     height: 35px;
     cursor: pointer;
-    color: #fff;
+    color: black;
     
+}
+button#send{
+    background-color: blueviolet;
+}
+button#reset{
+    background-color: brown;
 }
