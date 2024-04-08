@@ -66,4 +66,9 @@
     position: relative;
     left: 24%;
   }
+  .footer{
+    background-color: #E2DEDE;
+    padding: 20px;
+    text-align: center;
+  }
   
