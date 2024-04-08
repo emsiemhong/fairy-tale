@@ -1,0 +1,34 @@
+.card-container{
+    font-size: 1.2rem;
+}
+
+.img{
+    position: relative;
+    left: 25%;
+    padding: 20px;
+
+}
+.img img{
+    width:900px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.scripts{
+    width: 1050px;
+    height: 500px;
+    position: relative;
+    left: 23%;
+    margin-top: 9%;
+    color: #FA8501;
+    
+}
+.description{
+    margin-top: 1.5%;
+    
+}
+audio{
+    width: 100%;
+   position: relative;
+   top: 6%;
+}
