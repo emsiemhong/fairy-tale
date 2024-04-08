@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  body{
+    background-color: #009FC1;
+  }
+  .pic{
+    position: relative;
+    left: 23%;
+    top: 35px;
+  }
+  .pic img{
+    width: 1000px;
+    height: 700px;
+  }
+  .scripts{
+    width: 60%;
+    height: 200px;
+    position: relative;
+    top: 40px;
+    right: 3%;
+  }
+  .description{
+    width: 60%;
+    height: 200px;
+    position: relative;
+    bottom: 20px;
+    right: 3%;
+  }
+
+  .audio{
+    width: 60%;
+    position: relative;
+    top: 45%;
+    right: 3%;
+  }
+  .card-container{
+    font-size: 1rem;
+  }
+  .navbar-brand img{
+    width: 200px;
+    height: 150px;
+  }
+  .nav-link{
+    color: white;
+  }
+  .navbar-link{
+    position: relative;
+    left: 20%;
+    gap: 15%;
+  }
+  .navbar-brand{
+    position: relative;
+    right: 100%;
+    top: -20px;
+  }
+  .sub{
+    position: relative;
+    left: 24%;
+  }
+  .footer{
+    background-color: #E2DEDE;
+    padding: 20px;
+    text-align: center;
+  }
+  
